@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.supermarket.extendreports.TestListener" />
+	</listeners>
+	<!-- ONLY IF WE ADD THIS TAG, WE WIL GET THE EXTENDT REPORT WHEN WE RUN THE TEST CASE USING THIS XML FILE-->
+
+	<test thread-count="5" name="Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.supermarket.tests.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
